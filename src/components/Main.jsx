@@ -12,17 +12,29 @@ export default class Main extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-1">
-                        <p>Puntos de Venta</p>
+                        <p className="texti">Puntos de Venta</p>
                     </div>
                     <div className="col-md-11 header">
                         
-                        <img src="/assets/img/Header_1.png" height="200"  className="headerMsg" />
+                        <img src="/assets/img/Header_1.png" height="200" 
+                            style={{
+                                position:"absolute",
+                                top:"0%",
+                                left:"0%"
+                        }} />
                         
-                        <img src="/assets/img/Header_2.png" height="400" className="headerImg" />
-                        
-                        <img src="/assets/img/Header_3.png" height="200" className="headerPro" />
-                        
-                        
+                        <img src="/assets/img/Header_2.png" height="400" 
+                            style={{
+                        }} />
+                        <img src="/assets/img/Header_3.png" height="200" 
+                            style={{
+                                position:"absolute",
+                                top:"60%",
+                                left:"0%"
+                        }} />
+                    </div>
+                    <div className="col-md-12">
+                        <p>aqui deberia funcionar :'v </p>
                     </div>
                 </div>
             </div>

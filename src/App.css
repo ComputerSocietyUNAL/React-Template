@@ -38,28 +38,37 @@
 } */
 
 /*PC*/
-@media only screen and (min-width:415px) {
-.header{
+.texti{
   position: relative;
+  height: 100px;
+  color: red;
+  background-color: blue;
 }
-.headerMsg{
-  position: absolute;
-  display: none;
-  top:1px;
-  left: 0px;
-  z-index: 1;
-}
-.headerImg{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-}
-.headerProd{
-  position: absolute;
-  top:0px;
-  left:0px
-}
+@media only screen and (min-width:415px) {
+  .header{
+    position: relative;
+    height: 100px;
+    background-color: blue;
+  }
+  .headerMsg{
+    position: absolute;
+    display: none;
+    top:1%;
+    left: 0%;
+    z-index: 1;
+    background-color: red;
+  }
+  .headerImg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+  }
+  .headerProd{
+    position: absolute;
+    top:0%;
+    left:0%
+  }
 }
 
 /*PHONE*/
