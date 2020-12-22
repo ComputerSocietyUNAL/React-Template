@@ -1,14 +1,20 @@
-import React, { Component } from 'react'
-import Navigation from './components/navigation';
-import Header from './components/header';
-import Features from './components/features';
-import About from './components/about';
-import Services from './components/services';
-import Gallery from './components/gallery';
-import Testimonials from './components/testimonials';
-import Team from './components/Team';
-import Contact from './components/contact';
-import JsonData from './data/data.json';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
+import Main from './components/Main'
+import Solhidrex from './components/Solhidrex/index';
+import Laxium from './components/Laxium/index';
+import Labinpina from './components/Labinpina/index';
+import Diarrea from './components/Diarrea/index';
+import Dimenol from './components/Dimenol/index';
+import ContactUS from './components/Contacto/index';
+
+
+import JsonData from './data/data.json'; 
 
 export class App extends Component {
   state = {
@@ -24,17 +30,37 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <Navigation />
-        <Header data={this.state.landingPageData.Header} />
-        <Features data={this.state.landingPageData.Features} />
-        <About data={this.state.landingPageData.About} />
-        <Services data={this.state.landingPageData.Services} />
-        <Gallery />
-        <Testimonials data={this.state.landingPageData.Testimonials} />
-        <Team data={this.state.landingPageData.Team} />
-        <Contact data={this.state.landingPageData.Contact} />
-      </div>
+      <Router>
+        <div>
+          <Switch>
+              {/* <Header data={this.state.landingPageData.Header} /> */}
+            <Route path="/solhidrex" >
+              <Solhidrex />
+            </Route>
+            <Route path="/labinpina" >
+              <Labinpina />
+            </Route>
+            <Route path="/laxium" >
+              <Laxium />
+            </Route>
+            <Route path="/dimenol" >
+              <Dimenol />
+            </Route>
+            <Route path="/diarrea" >
+              <Diarrea />
+            </Route>
+            <Route path="/contactus" >
+              <ContactUS />
+            </Route>
+            <Route path="/home" >
+              <Main />
+            </Route>
+            <Route path="/">
+              <Main />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     )
   }
 }

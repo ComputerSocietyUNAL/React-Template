@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 
 export class Navigation extends Component {
   render() {
     return (
-      <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+      <nav id="menu" className="navbar navbar-default">
         <div className="container">
           <div className="navbar-header">
             <button
@@ -18,7 +20,7 @@ export class Navigation extends Component {
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
             </button>
-            <a className="navbar-brand page-scroll" href="#page-top">
+            <a className="navbar-brand ">
               React Landing Page
             </a>{" "}
           </div>
@@ -29,39 +31,39 @@ export class Navigation extends Component {
           >
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a href="#features" className="page-scroll">
-                  Features
-                </a>
+                <Link to="/home">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#about" className="page-scroll">
-                  About
-                </a>
+                <Link to="/solhidrex">
+                  Solhidrex
+                </Link>
               </li>
               <li>
-                <a href="#services" className="page-scroll">
-                  Services
-                </a>
+                <Link to="/labinpina">
+                  Labinpina
+                </Link>
               </li>
               <li>
-                <a href="#portfolio" className="page-scroll">
-                  Gallery
-                </a>
+                <Link to="/laxium">
+                  Laxium
+                </Link>
               </li>
               <li>
-                <a href="#testimonials" className="page-scroll">
-                  Testimonials
-                </a>
+                <Link to="/dimenol">
+                  Dimenol
+                </Link>
               </li>
               <li>
-                <a href="#team" className="page-scroll">
-                  Team
-                </a>
+                <Link to="/diarrea">
+                  Diarrea
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="page-scroll">
-                  Contact
-                </a>
+                <Link to="/contactus" >
+                  Contacto
+                </Link>
               </li>
             </ul>
           </div>
